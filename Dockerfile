@@ -13,6 +13,7 @@ RUN npm install
 
 # Copy app source
 COPY . .
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Bind the port that the image will run on
 EXPOSE 8080
